@@ -1,6 +1,24 @@
 # Divisa&Go
 
+**Tu dinero, sin fronteras.** Extensión de Chrome para convertir divisas, calcular, ver su evolución, comparar fuentes y consultar precios cripto.
+
+[![Descargar](https://img.shields.io/badge/⬇_Descargar-v1.5.0-ffd23f?style=for-the-badge&logo=googlechrome&logoColor=black)](https://github.com/dannymedinacoronel/DivisaGo-Extension/releases/latest) ![Manifest V3](https://img.shields.io/badge/Manifest-V3-7b2ff7?style=flat-square) ![Idiomas](https://img.shields.io/badge/idiomas-6-3b82f6?style=flat-square) ![Gratis](https://img.shields.io/badge/precio-gratis-2e9b63?style=flat-square) ![Sin rastreo](https://img.shields.io/badge/rastreo-ninguno-2e9b63?style=flat-square)
+
+**[Capturas](#capturas)** · **[Funciones](#funciones)** · **[Instalar](#instalación-y-actualización)** · **[Privacidad](#privacidad)** · **[Soporte](#soporte)** · [🌐 Web](https://divisaandgo.netlify.app/) · [🖥️ Versión para Windows](https://github.com/dannymedinacoronel/DivisaGo-support)
+
+---
+
 Divisa&Go es una extensión de Chrome para convertir divisas desde un popup compacto bajo el icono de la barra superior. Permite buscar monedas por país, nombre o código, consultar tasas de referencia, comparar cuatro fuentes pequeñas y copiar el resultado con un clic.
+
+## Capturas
+
+![Divisa&Go: conversión](docs/capturas/captura-1-convertir-1280x800.png)
+
+| | |
+|---|---|
+| ![Calculadora](docs/capturas/captura-2-calculadora-1280x800.png) | ![Evolución](docs/capturas/captura-3-evolucion-1280x800.png) |
+| ![Comparar fuentes](docs/capturas/captura-4-comparar-1280x800.png) | ![Cripto](docs/capturas/captura-5-cripto-1280x800.png) |
+| ![Buscar monedas](docs/capturas/captura-6-buscar-1280x800.png) | ![Temas](docs/capturas/captura-7-temas-1280x800.png) |
 
 ## Funciones
 
@@ -28,14 +46,6 @@ Divisa&Go es una extensión de Chrome para convertir divisas desde un popup comp
 Para actualizar, descarga el ZIP del último Release, sustituye la carpeta y pulsa el botón de recarga de Divisa&Go en `chrome://extensions`.
 
 Al abrir el popup por primera vez, elige uno de los seis idiomas disponibles y pulsa **Continuar**. Divisa&Go recuerda el idioma en el almacenamiento local de Chrome; puedes cambiarlo desde el selector de la cabecera.
-
-## Capturas
-
-| | |
-|---|---|
-| ![Convertir](docs/capturas/captura-1-convertir-1280x800.png) | ![Calculadora](docs/capturas/captura-2-calculadora-1280x800.png) |
-| ![Evolución](docs/capturas/captura-3-evolucion-1280x800.png) | ![Comparar fuentes](docs/capturas/captura-4-comparar-1280x800.png) |
-| ![Cripto](docs/capturas/captura-5-cripto-1280x800.png) | ![Temas](docs/capturas/captura-7-temas-1280x800.png) |
 
 ## Tipos de cambio y referencias
 
@@ -68,13 +78,87 @@ El BCE suele actualizar sus tipos de referencia alrededor de las **16:00 CET cad
 
 ## Privacidad
 
-Divisa&Go guarda en el almacenamiento local de la extensión de Chrome únicamente el idioma elegido y las monedas favoritas, para recordar esas preferencias entre sesiones. El importe, las monedas seleccionadas, el tema y el idioma aún no confirmado se guardan temporalmente en el almacenamiento de sesión de Chrome para restaurarlos si se cierra el popup; se borran al cerrar Chrome. Las cotizaciones solo permanecen en memoria y se vuelven a consultar al abrir el popup. No hay cuenta, analítica ni seguimiento propio. Las preferencias locales se eliminan al borrar los datos de la extensión o desinstalarla.
+**Resumen:** sin cuentas, sin analítica y sin seguimiento propio.
 
-Para obtener tipos, se hacen solicitudes a Frankfurter y al BCE; para las otras referencias se solicitan páginas de Wise, Xe y TradingView. Se envían los códigos del par de monedas, pero **no el importe introducido**. Como en cualquier conexión web, los proveedores pueden recibir datos técnicos de conexión y tratar las solicitudes según sus propias políticas de privacidad. El resultado solo se copia al portapapeles cuando pulsas el recuadro del resultado.
+- Solo se guardan **en tu navegador** el idioma elegido y las monedas favoritas. El importe, el par de monedas, el tema y el idioma aún no confirmado se guardan temporalmente en el almacenamiento de sesión y se borran al cerrar Chrome.
+- Para obtener tipos se consulta a Frankfurter y al BCE, y para las demás referencias a Wise, Xe y TradingView (y a CoinGecko, Binance, Coinbase y Kraken en la sección Cripto). Solo se envían los **códigos del par de monedas; nunca el importe**. Como en cualquier conexión web, esos proveedores pueden recibir datos técnicos de conexión (como tu IP) y los tratan según sus propias políticas.
+- El resultado solo se copia al portapapeles cuando pulsas el recuadro.
+- Todo se elimina al borrar los datos de la extensión o desinstalarla.
+
+Política completa: **[PRIVACY.md](PRIVACY.md)** · también en la [web](https://divisaandgo.netlify.app/soporte.html#privacidad).
 
 ## Interfaz e identidad
 
 El icono de la barra sigue el diseño amarillo de Divisa&Go. Las banderas se incluyen como archivos SVG locales de [Twemoji](https://github.com/jdecked/twemoji), bajo licencia [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), para que se vean aunque el sistema no tenga fuentes de emoji con banderas.
+
+## Soporte
+
+¿Algo no funciona o tienes una duda? Hay tres vías, de la más rápida a la más completa:
+
+1. **Preguntas frecuentes** (justo debajo): resuelven la mayoría de los casos.
+2. **Una incidencia en GitHub**: [abre una aquí](https://github.com/dannymedinacoronel/DivisaGo-Extension/issues/new?template=problema.md). Es la mejor opción para fallos, porque queda registrado y otros usuarios pueden verlo.
+3. **Correo**: [empresademkor@gmail.com](mailto:empresademkor@gmail.com) para consultas privadas, privacidad o sugerencias.
+4. **Web de soporte**: [divisaandgo.netlify.app/soporte](https://divisaandgo.netlify.app/soporte.html) (preguntas frecuentes y contacto).
+
+**Para poder ayudarte rápido, incluye:** la versión de Divisa&Go (en `chrome://extensions`), tu versión de Chrome (`chrome://settings/help`), tu sistema operativo, qué esperabas que pasara y qué pasó, y los pasos para repetirlo. No envíes contraseñas ni datos personales.
+
+### Preguntas frecuentes
+
+<details>
+<summary><b>Una tarjeta (Wise, Xe, TradingView o BCE) sale sin datos</b></summary>
+
+Es normal de forma temporal. Wise, Xe y TradingView se leen de sus páginas públicas, que pueden cambiar, limitar solicitudes o no publicar el par; el BCE solo cubre las monedas que publica. Pulsa el botón de actualizar. La conversión principal (Frankfurter) y las demás tarjetas siguen funcionando.
+
+</details>
+
+<details>
+<summary><b>¿Por qué el resultado no coincide con mi banco o con Xe?</b></summary>
+
+Las tasas son **de referencia e indicativas**, no el precio de una operación: no incluyen comisiones ni márgenes y el BCE solo publica tipos diarios (alrededor de las 16:00 CET en días hábiles). Comprueba siempre el importe final con tu banco o proveedor.
+
+</details>
+
+<details>
+<summary><b>No carga ninguna tasa</b></summary>
+
+La consulta se cancela a los 15 segundos si no hay respuesta. Comprueba tu conexión y pulsa actualizar. Si Frankfurter no responde, se usa la primera referencia disponible (BCE, Wise, Xe, TradingView); si ninguna está disponible se conserva la última tasa recibida en esta sesión.
+
+</details>
+
+<details>
+<summary><b>¿Funciona sin conexión?</b></summary>
+
+Solo convertir una divisa a sí misma. Para el resto hace falta conexión para consultar los tipos.
+
+</details>
+
+<details>
+<summary><b>Mis favoritas o el idioma han desaparecido</b></summary>
+
+Se guardan en el almacenamiento local de la extensión: se pierden si desinstalas Divisa&Go o borras sus datos. El importe y el tema son temporales y se restablecen al cerrar Chrome.
+
+</details>
+
+<details>
+<summary><b>¿Qué fuente usa el cálculo principal?</b></summary>
+
+[Frankfurter](https://frankfurter.dev/) (tipos diarios de bancos centrales). El par elegido se calcula en tu equipo; se muestra la fecha de referencia.
+
+</details>
+
+<details>
+<summary><b>Cómo actualizar a una versión nueva</b></summary>
+
+Descarga el ZIP del [último Release](https://github.com/dannymedinacoronel/DivisaGo-Extension/releases/latest), sustituye la carpeta anterior y pulsa el botón de recargar de Divisa&Go en `chrome://extensions`.
+
+</details>
+
+<details>
+<summary><b>¿Hay versión para Windows?</b></summary>
+
+Sí: una aplicación de escritorio con la chincheta para mantenerla siempre visible. Descárgala en [DivisaGo-support](https://github.com/dannymedinacoronel/DivisaGo-support).
+
+</details>
 
 ## Créditos
 
